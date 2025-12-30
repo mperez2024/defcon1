@@ -368,14 +368,17 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Defcon 1</span></strong> All Rights Reserved.
-      </div>
+        <p>Copyright © <span id="year"></span>. Defcon-1 | All Rights Reserved | Design by: <a href="https://mperez2024.github.io/mptech/"target="_blank">MP-Tech</a></p></p>
+
+        <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        </script>      </div>
       <div class="credits">
         <!-- =======================================================
   * Template Name: Defcon - v2.5.0  Creator: Miguel E. Perez Velazquez
   ======================================================== -->
     
-        Designed by: <a href="https://mperez2024.github.io/mptech/"target="_blank">MP-Tech</a>
+
       </div>
     </div>
   </footer>
@@ -396,6 +399,7 @@
 </body>
 
 </html>
+
 
 
 
