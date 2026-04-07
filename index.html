@@ -104,6 +104,27 @@
         <div class="col-lg-8">
           <h1>Defcon-1 <span>COCKED PISTOL</span></h1>
           <h2>Maximum readiness, Immediate response.</h2>
+			<script>
+          const now = new Date();
+
+          // Day of the week name
+          const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+          const dayName = daysOfWeek[now.getDay()];
+
+          // Month names (Full Form)
+          const months = [
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+          ];
+          const monthName = months[now.getMonth()];
+
+          // Date components
+          const day = now.getDate();
+          const year = now.getFullYear();
+
+          document.write(dayName + ", " + monthName + " " + day + ", " + year + ".");
+        </script>
+
 
           <div class="btns">
             <a href="assets/img/Glock.mp4"target="_blank" class="btn-menu animated fadeInUp scrollto">.45 ACP</a>
@@ -338,25 +359,7 @@
             <h4>Additional Safety Precautions.</h4>
             <p>Be <strong><a href="https://www.bayer.com/en/news-stories/developing-the-next-generation-of-gene-editing-tools"target="_blank"><b style='color:#ef0b0b'>aware</b></a> that certain types of guns and many shooting activities require additional safety <strong><a href="https://bibliotecapleyades.net/archivos_pdf2/pfizer-papers.pdf"target="_blank"><b style='color:#ef0b0b'>precautions</b></a>.                          
 	   
-	    <!-- ======= Day + Hours ======= -->
-            <p><html>
-              <head>
-                <title></title>
-              </head>
-              <body>               
-                <h2 id="displayDateTime"></h2>
-              </body>
-                <script type="text/javascript">
-                var today = new Date();
-                var day = today.getDay();
-                var daylist = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];                
-                var date = (today.getMonth()+1)+'/'+today.getDate()+'/'+today.getFullYear()+'.';
-                var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-                var dateTime = date;                 
-                document.getElementById("displayDateTime").innerHTML = dateTime + '  ' + daylist[day];              
-                </script>
-              </html></p>
-              <!-- ======= Day + Hours ======= -->	    
+	    
 	    
 	    </p>
 
